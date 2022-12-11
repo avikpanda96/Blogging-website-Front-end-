@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>icoader.in</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">icoader</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success mx-auto" type="submit">
+              Search
+            </button>
+            <div class="mx-2">
+              <input
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                class="btn btn-danger"
+                type="button"
+                value="Log In"
+              />
+            </div>
+
+            <div>
+              <input
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalToggle2"
+                class="btn btn-primary"
+                type="button"
+                value="Sign up"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--modal-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              LoGiN To icOaDeR
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body container--mini bg-light">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >password</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                />
+              </div>
+            </div>
+            <button
+              class="btn btn-primary me-md-2"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              Log in
+            </button>
+          </div>
+          <div class="position-absolute bottom-0 start-0">
+            <p class="float-none"><a href="#">Forgot password?</a></p>
+          </div>
+          <div class="modal-footer">
+            <p>Don't have an account?</p>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal"
+            >
+              Sign UP
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+              Modal 2
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+
+<div class="container-fluid bg-light">
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Enter Password</label>
+                  <input type="password" class="form-control" id="address" placeholder="create new password" required="">
+                  <div class="invalid-feedback">
+                    password must be in 8 characters.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Confirm Password <span class="text-muted"></span></label>
+                  <input type="password" class="form-control" id="address2" placeholder="confirm your password">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit">Recruiter</label>
+              </div>
+
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit">Student</label>
+              </div>
+
+              
+    
+             
+             
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Create Account</button>
+            </form>
+
+          </div>
+          </div>
+          <div class="modal-footer">
+            <p>already have an account?</p>
+            <button
+              class="btn btn-danger"
+              data-bs-target="#staticBackdrop"
+              data-bs-toggle="modal"
+            >
+              Go to Login page
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal end-->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="photo-12.jfif" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to icoader</h2>
+            <p>
+              We help candidates sharpen their tech skills and pursue job
+              opportunities.
+            </p>
+            <button type="button" class="btn btn-danger">Technology</button>
+            <button type="button" class="btn btn-primary">Development</button>
+            <button type="button" class="btn btn-success">Tech News</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="photo-1573497019414-e44d0759d00e.jfif"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Best Website for Coding</h2>
+            <p>
+              We help candidates sharpen their tech skills and pursue job
+              opportunities.
+            </p>
+            <button type="button" class="btn btn-danger">Technology</button>
+            <button type="button" class="btn btn-primary">Development</button>
+            <button type="button" class="btn btn-success">Tech News</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photo-coading.jfif" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Global Rank NO. <strong>1</strong></h2>
+            <p>
+              We help candidates sharpen their tech skills and pursue job
+              opportunities.
+            </p>
+            <button type="button" class="btn btn-danger">Technology</button>
+            <button type="button" class="btn btn-primary">Development</button>
+            <button type="button" class="btn btn-success">Tech News</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">Why icoader?</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="photo-blog11.jfif"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">Be a Developer</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">
+                welcome to igame!! the latest cloud gaming platform by icoader.
+                Here you can play and earn money.
+              </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="photo-blog3.jfif"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">Earn with igames!!</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">
+                welcome to <b>igame</b>!! the latest cloud gaming platform by
+                icoader. Here you can play and earn money.
+              </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="photo-21.jfif"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">future opportunities in Robotics!!</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">
+                welcome to !! the latest cloud gaming platform by icoader. Here
+                you can play and earn money.
+              </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                src="photo-blog4.jfif"
+                alt=""
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">©2022 icoader inc. All Rights Reserved. </p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="/privacy.html">Privacy</a></li>
+        <li class="list-inline-item"><a href="/Terms.html">Terms</a></li>
+        <li class="list-inline-item"><a href="/support.html">Support</a></li>
+      </ul>
+    </footer>-->
+
+    <!-- <hr class="featurette-divider">-->
+
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>
+        © 2017–2022 icoader, Inc. · <a href="/privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
